@@ -1,12 +1,12 @@
 {
-  "name": "11ty-sass-skeleton",
+  "name": "11ty-eclectic-coding",
   "version": "1.2.0",
-  "description": "",
+  "description": "My blog based on 11ty-sass-skeleton by Stephanie Eckles",
   "main": "index.html",
   "scripts": {
-    "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
+    "watch:sass": "sass --watch src/sass:public/css",
     "watch:eleventy": "eleventy --serve",
-    "build:sass": "sass  --no-source-map src/sass:public/css",
+    "build:sass": "sass --no-source-map src/sass:public/css",
     "build:eleventy": "eleventy",
     "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
     "start": "npm-run-all build:sass --parallel watch:*",
@@ -16,7 +16,10 @@
     "type": "git",
     "url": "git+https://github.com/5t3ph/11ty-sass-skeleton.git"
   },
-  "author": "5t3ph",
+  "author": {
+    "name": "Chuck Smith",
+    "email": "chuck@eclecticsaddlebag.com"
+  },
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^0.11.1",
