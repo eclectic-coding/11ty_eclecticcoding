@@ -4,6 +4,7 @@
   "description": "My blog based on 11ty-sass-skeleton by Stephanie Eckles",
   "main": "index.html",
   "scripts": {
+    "tokens": "npx a11y-color-tokens --outputDirPath='src/sass' --colorTokensPath='src/_data/colors.js' --compatibilityDocsPath='src/docs'",
     "watch:sass": "sass --watch src/sass:public/css",
     "watch:eleventy": "eleventy --serve",
     "build:sass": "sass --no-source-map src/sass:public/css",
@@ -25,6 +26,7 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^0.11.1",
+    "a11y-color-tokens": "^0.5.0",
     "autoprefixer": "^9.8.6",
     "cross-env": "^7.0.3",
     "cssnano": "^4.1.10",

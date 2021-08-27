@@ -1,0 +1,31 @@
+/* 🛑 STOP!
+  Do not change this file directly.
+  Modify colors in src/_data/colors.js
+ */
+
+$color-primary: hsl(256, 91%, 62%) !default;
+$color-on-primary: hsl(262, 100%, 95.7%) !default;
+$color-error: hsl(2, 91%, 62%) !default;
+$color-on-error: hsl(3, 90%, 15.7%) !default;
+$color-text: hsl(232, 22%, 23%) !default;
+$color-on-text: hsl(232, 11.1%, 62.9%) !default;
+
+$base-color-tokens: ("primary", "error", "text");
+
+$color-tokens: (
+  "color-primary": $color-primary,
+  "color-on-primary": $color-on-primary,
+  "color-error": $color-error,
+  "color-on-error": $color-on-error,
+  "color-text": $color-text,
+  "color-on-text": $color-on-text
+) !default;
+
+@mixin color-tokens() {
+  --color-primary: #{$color-primary};
+  --color-on-primary: #{$color-on-primary};
+  --color-error: #{$color-error};
+  --color-on-error: #{$color-on-error};
+  --color-text: #{$color-text};
+  --color-on-text: #{$color-on-text};
+}
